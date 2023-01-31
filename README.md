@@ -1,7 +1,7 @@
 # The-James-Project
 
 ## Client: James Halladay
-### Contact: jehalladay@mavs.coloradomesa.edu
+### Contact: 9706835652, jehalladay@mavs.coloradomesa.edu
 
 ## Sonia Sherpa: 
 ### Contact: 9706889003, ssherpa2@mavs.coloradomesa.edu
