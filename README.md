@@ -1,4 +1,4 @@
-# The-James-Project
+# Feature Extraction Tool
 
 ### Client: James Halladay
 #### Contact: 9706835652, jehalladay@mavs.coloradomesa.edu
