@@ -1,4 +1,4 @@
-# Feature Extraction Tool
+# Feature Extraction Engine
 
 ### Client: James Halladay
 #### Contact: 9706835652, jehalladay@mavs.coloradomesa.edu
