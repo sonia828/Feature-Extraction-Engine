@@ -145,13 +145,13 @@ def process_pcap(filename, num_packets, label):
             sample_values['UDP_len_var'] = np.var(temp['UDP_len'])
             sample_values['UDP_len_sum'] = sum(temp['UDP_len'])
         else:
-            sample_values['UDP_len_avg'] = 0
-            sample_values['UDP_len_avg'] = 0
-            sample_values['UDP_len_max'] = 0
-            sample_values['UDP_len_min'] = 0
-            sample_values['UDP_len_std'] = 0
-            sample_values['UDP_len_var'] = 0
-            sample_values['UDP_len_sum'] = 0
+            sample_values['UDP_len_avg'] = None
+            sample_values['UDP_len_avg'] = None
+            sample_values['UDP_len_max'] = None
+            sample_values['UDP_len_min'] = None
+            sample_values['UDP_len_std'] = None
+            sample_values['UDP_len_var'] = None
+            sample_values['UDP_len_sum'] = None
 
         if len(temp['udp_checksum']) > 0:
             sample_values['udp_checksum_avg'] = sum(temp['udp_checksum'])/len(temp['udp_checksum'])
@@ -161,12 +161,12 @@ def process_pcap(filename, num_packets, label):
             sample_values['udp_checksum_var'] = np.var(temp['udp_checksum'])
             sample_values['udp_checksum_dist'] = Counter(temp['udp_checksum'])
         else:
-            sample_values['udp_checksum_avg'] = 0
-            sample_values['udp_checksum_max'] = 0
-            sample_values['udp_checksum_min'] = 0
-            sample_values['udp_checksum_std'] = 0
-            sample_values['udp_checksum_var'] = 0
-            sample_values['udp_checksum_dist'] = 0
+            sample_values['udp_checksum_avg'] = None
+            sample_values['udp_checksum_max'] = None
+            sample_values['udp_checksum_min'] = None
+            sample_values['udp_checksum_std'] = None
+            sample_values['udp_checksum_var'] = None
+            sample_values['udp_checksum_dist'] = None
 
         # Calculate the most common value (mode) for new features
         sample_values['dst_mac_mode'] = Counter(temp['dst_mac']).most_common(1)[0][0]
